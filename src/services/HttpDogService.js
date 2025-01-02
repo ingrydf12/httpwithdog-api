@@ -18,7 +18,7 @@ class HttpDogService {
         }
       } catch (error) {
         console.error("Erro completo:", error);
-        throw new Error(`Erro ao realizar a requisição: ${error.message}`);
+        throw new Error(`Tente outro status. Parece que esse não existe...`);
       }
     }
   }

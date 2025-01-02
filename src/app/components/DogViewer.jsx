@@ -37,7 +37,12 @@ const DogImageViewer = () => {
         onChange={(e) => setStatusCode(e.target.value)}
       />
       <button onClick={handleFetchImage} className="mt-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 px-6 font-semibold rounded-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-transform transform hover:scale-105 active:scale-95">Buscar Imagem</button>
-      {error && <p style={{ color: "red", padding: "1rem"}}>{error}</p>}
+      {error && (
+        <div className="mt-4 text-center">
+          <img className="mx-auto w-9/12 h-auto rounded-md" src="none.gif" alt="Erro" />
+          <p className="text-red-600 font-semibold mt-2">{error}</p>
+        </div>
+      )}
       {dogImageUrl && <img src={dogImageUrl} alt={`Http Dog ${statusCode}`} style={{ width: "30rem", height: "auto"}} />}
     </div>
   );
