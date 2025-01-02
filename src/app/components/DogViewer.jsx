@@ -31,7 +31,7 @@ const DogImageViewer = () => {
     <div className="grid justify-items-center p-1">
       <input
       className="flex-1 w-10/12 h-10 mb-2 text-black placeholder:text-slate-400 placeholder:italic rounded-md px-2"
-        type="text"
+        type="number"
         placeholder="Exemplo: 404"
         value={statusCode}
         onChange={(e) => setStatusCode(e.target.value)}
