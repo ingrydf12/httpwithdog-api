@@ -11,6 +11,18 @@ Uma aplicação simples desenvolvida com **React** e **Tailwind CSS** para exibi
 ## Demonstração
 ![demonstracao](https://github.com/user-attachments/assets/0fc0b47e-6f2a-46b1-aae8-6962e8509eae)
 
+## Estrutura
+```
+└── src/
+        ├── app/
+        │   ├── globals.css
+        │   ├── layout.js
+        │   ├── page.js
+        │   └── components/
+        │       └── DogViewer.jsx
+        └── services/
+            └── HttpDogService.js
+```
 
 ## 🛠️ Como Rodar o Projeto  
 
